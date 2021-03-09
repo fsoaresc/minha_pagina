@@ -7,29 +7,44 @@
 	<title>Primeira pagina css</title>
 
 <style type="text/css">
-	p{
-		color: yellow;
-		font-size: 20px;
-		padding-left: 200px
+	h1{
+		color: red;	font-size: 40px; text-align: center;
+	}
+	#home{
+		color: black; font-size: 20px; background: yellow; width: 200px; height: 30px; float: left;
 	}
 	
-	h1{
-		color: red;
-		font-size: 40px;
-		text-align: center;
+	#conteudo{
+		color: black; font-size: 20px; float: right; background: yellow; width: 1000px; height: 150px; padding-right: 40px;
 	}
-	th{
-		color: red;
+	#cidade{
+		color: black; margin-top: 20px;
 		font-size: 20px;
-		text-align: center;
+		float: left; 
+background: yellow; width: 200px; height: 30px;
 	}
-	.minha_class{
-		color: black;
+	
+
+#pensamento{
+		color: black; margin-top: 20px;
 		font-size: 20px;
+		float: left;
+background: yellow; width: 200px; height: 30px;
 	}
+#link{
+		color: black; margin-top: 20px;
+		font-size: 20px;
+		 float: left; 
+background: yellow; width: 200px; height: 30px;
+	}
+
+div{
+	background: white; width: 150px; height: 30px;
+}	
 
 body{
 	background: yellow;
+	
 }
 
 </style>
@@ -40,50 +55,36 @@ body{
 
 <h1 >Minha primeira pagina CSS</h1>
 
-<table border = "0,1" width="900" cellpadding="0,2" cellspacing="4" bgcolor="yellow" >
-<tr>
-	<th bgcolor="white" class="minha_class">
-		Home Page
-	</th>
 
-	<th >
+<div id="home">
+<div> Home Page</div>
+</div>
+<div id="conteudo">
+	<p>
 		Bem vindo à minha pagina estilizada
-	</th>
+	</p> 
+<p>
+	Quando um corpo recebe ou cede certa quantidade de energia térmica, podemos observar, como consequência, uma variação de sua temperatura ou uma mudança em seu estado físico.
+</p>
+<p>
+	A variação de temperatura corresponde a uma variação no estado de agitação das partículas do corpo. Nesse caso, a energia térmica transferida é denominada calor sensível.
+</p>
+<p>
+	A mudança de estado físico corresponde a uma alteração no estado de agregação das partículas do corpo, fazendo com que um sólido, por exemplo, transforme-se em líquido. A energia térmica responsável pelas mudanças de estado denomina-se calor latente.
+</p>
+</div>
 
-</tr>
-
-<tr>
-	<th bgcolor="white" class="minha_class">
-		Pensamentos
-	</th>
-
-	<th>
-		Quando um corpo recebe ou cede certa quantidade de energia térmica, podemos observar, como consequência, uma variação de sua temperatura ou uma mudança em seu estado físico.
-	</th>
-
-</tr>
-
-<tr>
-	<th bgcolor="white" class="minha_class">
-		Minha cidade
-	</th>
-
-	<th>
-A variação de temperatura corresponde a uma variação no estado de agitação das partículas do corpo. Nesse caso, a energia térmica transferida é denominada calor sensível.
-	</th>
-
-</tr>
-
-<tr>
-	<th bgcolor="white" class="minha_class">
-		Links
-	</th>
-
-	<th>
-		A mudança de estado físico corresponde a uma alteração no estado de agregação das partículas do corpo, fazendo com que um sólido, por exemplo, transforme-se em líquido. A energia térmica responsável pelas mudanças de estado denomina-se calor latente.
-
-	</th>
-
+<div>
+<div id="pensamento">
+<div>  Pensamentos</div>
+</div>
+<div id="cidade">
+ <div> Minha Cidade</div>
+ </div>
+<div id="link">
+<div> Links</div>
+</div>
+</div>
 </body>
 
 </html>
