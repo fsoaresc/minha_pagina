@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Data</title>
+
+<script type="text/javascript">
+	function mostravalor(componente){
+var valor = componente.getAttriute('data-idade''data-CPF');
+/*alert(valor); */
+}
+</script>
+
+<style type="text/css">
+
+.pessoa{
+	color: red;
+	}
+
+.pessoa[data-idade='30']{
+	color: blue; 
+}
+
+.pessoa[data-idade='20']::before{
+	content: 'Nome: '
+}
+.pessoa[data-idade='20']::after{
+	content: ' -Idade: ' attr(data-idade) attr(data-CPF);
+}
+
+.pessoa[data-idade='30']::before{
+	content: 'Nome: '
+}
+.pessoa[data-idade='30']::after{
+	content: ' -Idade: ' attr(data-idade) attr(data-CPF);
+}
+
+.pessoa[data-idade='40']::before{
+	content: 'Nome: '
+}
+.pessoa[data-idade='40']::after{
+	content: ' -Idade: ' attr(data-idade) attr(data-CPF);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 >Custom Data</h1>
+
+<div>
+
+<ul>
+
+<li class="pessoa" onclick="mostravalor(this)" data-idade="20" data-CPF=" Anos -CPF: 000">João</li>
+<li class="pessoa" onclick="mostravalor(this)" data-idade="30" data-CPF=" Anos -CPF: 111">José</li>
+<li class="pessoa" onclick="mostravalor(this)" data-idade="40" data-CPF=" Anos -CPF: 222">Maria</li>
+
+</ul>
+
+</div>
+
+</body>
+
+</html>
